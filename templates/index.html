@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Hava Durumu Servisi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Şehir Hava Durumu Sorgulama</h1>
+        <div class="input-group">
+            <input type="text" id="sehir-input" placeholder="Şehir adını girin (örn: İstanbul)">
+            <button onclick="getWeather()">Sorgula</button>
+        </div>
+
+        <div id="sonuc-kutusu" class="sonuc-kutusu">
+            <p class="placeholder">Yukarıya bir şehir adı girin ve sorgulayın.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script></body>
+</html>
