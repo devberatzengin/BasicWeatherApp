@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-API_KEY = "3575628e59229ef2023ceae16c0877ec"
+API_KEY = "YOUR_APİ_KEY"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 @app.route('/')
